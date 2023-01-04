@@ -1,11 +1,32 @@
 {
 	"name": "MT Theme",
 	"colors": {
-		"editor.background": "#263238",
-		"editor.foreground": "#eeffff",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
-	},
+    "activityBar.background": "#181818",
+    "activityBarBadge.background": "#238636",
+    "activityBarBadge.foreground": "#ffffff",
+		"badge.background": "#238636",
+		"button.background": "#238636",
+    "focusBorder": "#292929",
+    "statusBar.foreground": "#787878",
+    "statusBar.background": "#292929",
+    "sideBar.foreground": "#d1d1d1",
+    "sideBar.background": "#181818",
+    "sideBarTitle.foreground": "#bbbbbb",
+    "editor.foreground": "#e7e7e7",
+    "editorLineNumber.foreground": "#565656",
+    "editorLineNumber.activeForeground": "#c2c2c2",
+    "editor.background": "#181818",
+    "editorGroupHeader.tabsBackground": "#292929",
+    "titleBar.activeForeground": "#f8f8f8",
+    "titleBar.activeBackground": "#292929",
+    "titleBar.inactiveBackground": "#292929",
+    "titleBar.inactiveForeground": "#777777",
+    "tab.hoverBackground": "#181818",
+    "tab.activeBackground": "#181818",
+    "tab.activeBorderTop": "#e0e0e0",
+    "tab.activeBorder": "#181818",
+    "terminal.background": "#181818"
+  },
 	"tokenColors": [
 		{
 			"name": "Comment",
@@ -55,7 +76,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#889cff"
 			}
 		},
 		{
@@ -75,7 +96,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#d1d1d1"
 			}
 		},
 		{
@@ -86,7 +107,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#67c3ff"
 			}
 		},
 		{
@@ -149,7 +170,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#e394dc"
 			}
 		},
 		{
@@ -238,7 +259,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#af9cff"
 			}
 		},
 		{
