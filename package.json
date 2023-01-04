@@ -1,0 +1,21 @@
+{
+  "name": "moritaki-theme",
+  "displayName": "moritaki theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "MT Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/MT Theme-color-theme.json"
+      }
+    ]
+  }
+}
