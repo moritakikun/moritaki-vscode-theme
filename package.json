@@ -6,15 +6,21 @@
   "engines": {
     "vscode": "^1.74.0"
   },
+  "keywords": [
+		"theme",
+		"dark",
+    "MT",
+    "moritaki"
+	],
   "categories": [
     "Themes"
   ],
   "contributes": {
     "themes": [
       {
-        "label": "MT Theme",
+        "label": "MT Dark Default",
         "uiTheme": "vs-dark",
-        "path": "./themes/MT Theme-color-theme.json"
+        "path": "./themes/dark-default.json"
       }
     ]
   }

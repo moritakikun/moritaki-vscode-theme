@@ -1,16 +1,19 @@
 {
-	"name": "MT Theme",
+	"name": "dark-default",
 	"colors": {
     "activityBar.background": "#181818",
     "activityBar.border": "#383838",
-    "activityBarBadge.background": "#1a85f6",
-    "activityBarBadge.foreground": "#d1d1d1",
-    "badge.background": "#1a85f6",
+    "activityBar.foreground": "#d1d1d1",
+    "activityBarBadge.background": "#ff7936",
+    "activityBarBadge.foreground": "#232323",
+    "badge.background": "#ff7936",
+    "badge.foreground": "#232323",
     "breadcrumb.activeSelectionForeground": "#d1d1d1",
     "breadcrumb.background": "#181818",
     "breadcrumb.focusForeground": "#d1d1d1",
     "breadcrumb.foreground": "#555555",
-    "button.background": "#1a85f6",
+    "button.background": "#ff7936",
+    "button.foreground": "#232323",
     "editor.background": "#181818",
     "editor.foldBackground": "#232323",
     "editor.foreground": "#d1d1d1",
@@ -19,7 +22,7 @@
     "editor.selectionBackground": "#163764",
     "editor.wordHighlightBackground": "#383838",
     "editor.wordHighlightStrongBackground": "#194176",
-    "editorError.foreground": "#c94859",
+    "editorError.foreground": "#db3552",
     "editorGroup.border": "#383838",
     "editorGroupHeader.tabsBackground": "#292929",
     "editorGroupHeader.tabsBorder": "#383838",
@@ -31,7 +34,7 @@
     "editorSuggestWidget.foreground": "#d1d1d1",
     "editorSuggestWidget.highlightForeground": "#57aaf7",
     "editorSuggestWidget.selectedBackground": "#194176",
-    "editorWarning.foreground": "#facb66",
+    "editorWarning.foreground": "#f8ab17",
     "editorWidget.border": "#383838",
     "focusBorder": "#292929",
     "gitDecoration.addedResourceForeground": "#3ea17f",
@@ -41,6 +44,7 @@
     "gitDecoration.modifiedResourceForeground": "#1a85f6",
     "gitDecoration.submoduleResourceForeground": "#1a85f6",
     "gitDecoration.untrackedResourceForeground": "#3ea17f",
+    "icon.foreground": "#d1d1d1",
     "input.background": "#292929",
     "input.foreground": "#d1d1d1",
     "input.placeholderForeground": "#767676",
@@ -63,6 +67,7 @@
     "sideBar.border": "#383838",
     "sideBar.foreground": "#d1d1d1",
     "sideBarTitle.foreground": "#929292",
+    "sideBarSectionHeader.foreground": "#d1d1d1",
     "statusBar.background": "#292929",
     "statusBar.foreground": "#787878",
     "symbolIcon.arrayForeground": "#e0823d",
@@ -106,6 +111,22 @@
     "tab.inactiveBackground": "#292929",
     "tab.unfocusedActiveBackground": "#181818",
     "terminal.background": "#181818",
+    "terminal.ansiBlack": "#434343",
+    "terminal.ansiRed": "#ff4d4f",
+    "terminal.ansiGreen": "#52c41a",
+    "terminal.ansiYellow": "#ffd591",
+    "terminal.ansiBlue": "#1677ff",
+    "terminal.ansiMagenta": "#9254de",
+    "terminal.ansiCyan": "#13c2c2",
+    "terminal.ansiWhite": "#a3afbd",
+    "terminal.ansiBrightBlack": "#bfbfbf",
+    "terminal.ansiBrightRed": "#ff7875",
+    "terminal.ansiBrightGreen": "#95de64",
+    "terminal.ansiBrightYellow": "#ffd666",
+    "terminal.ansiBrightBlue": "#69b1ff",
+    "terminal.ansiBrightMagenta": "#d3adf7",
+    "terminal.ansiBrightCyan": "#87e8de",
+    "terminal.ansiBrightWhite": "#d1d1d1",
     "textBlockQuote.background": "#163764",
     "textCodeBlock.background": "#163764",
     "titleBar.activeBackground": "#292929",
@@ -139,8 +160,7 @@
         "meta.class",
 
         "markup.deleted.git_gutter",
-        "support.class.component.html",
-
+        "support.class.component",
         "new.expr meta.function-call",
         "new.expr meta.brace.round"
       ],
@@ -158,7 +178,11 @@
     },
     {
       "name": "Vue template",
-      "scope": ["entity.name.tag.template", "entity.name.tag.script", "entity.name.tag.style"],
+      "scope": [
+        "entity.name.tag.template",
+        "entity.name.tag.script",
+        "entity.name.tag.style"
+      ],
       "settings": {
         "foreground": "#b47fff",
         "fontStyle": "italic"
@@ -200,6 +224,7 @@
     {
       "name": "Keyword, Class, Type, Interface, Namespace",
       "scope": [
+        "keyword.var",
         "keyword.package",
         "keyword.import",
         "keyword.function",
@@ -258,8 +283,8 @@
         "meta.parameters",
         "meta.objectliteral",
 
-        "variable.other.property",
         "variable.other.object",
+        "variable.other.property",
         "variable.other.readwrite.alias",
         "variable.other.object.property",
         "variable.other.constant.object.property",
@@ -268,9 +293,6 @@
         "constant.other.color",
 
         "punctuation",
-        "punctuation.definition.tag",
-        "punctuation.separator.inheritance",
-        "punctuation.section.embedded",
 
         "keyword.other.template",
         "keyword.other.substitution",
@@ -295,8 +317,6 @@
       "name": "String, Symbols, Inherited Class, Markup Heading, Invalid",
       "scope": [
         "string",
-        "string.quoted.double",
-        "string.unquoted.label",
 
         "punctuation.definition.string.template.begin",
         "punctuation.definition.string.template.end",
