@@ -2,4 +2,4 @@
 
 ## description
 
-this is an unfinished theme, whick is based on Fleet Dark theme and other themes
+this is an unfinished theme, which is based on Fleet Dark theme and other themes
