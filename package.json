@@ -1,7 +1,8 @@
 {
-  "name": "moritaki-theme",
-  "displayName": "moritaki theme",
-  "description": "A theme extending fleet dark",
+  "name": "moritaki-vscode-theme",
+  "displayName": "Moritaki Theme",
+  "description": "Vscode Theme",
+  "publisher": "moritaki",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
@@ -13,8 +14,8 @@
   },
   "keywords": [
     "theme",
+    "vscode",
     "dark",
-    "MT",
     "moritaki"
   ],
   "categories": [
