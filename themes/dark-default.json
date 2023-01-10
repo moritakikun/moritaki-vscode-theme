@@ -154,8 +154,8 @@
       "scope": [
         "punctuation.definition.tag.begin",
         "punctuation.definition.tag.end",
-        "text.html.vue-html meta.tag.block.any.html",
-        "text.html.vue-html meta.tag.any.html "
+        "text.html.vue-html meta.tag.block.any.html"
+
       ],
       "settings": {
         "foreground": "#777777"
@@ -173,7 +173,8 @@
         "meta.class",
         "markup.deleted.git_gutter",
         "support.class.component",
-        "new.expr meta.brace.round"
+        "new.expr meta.brace.round",
+        "new.expr meta.function-call entity.name.function "
       ],
       "settings": {
         "foreground": "#87C3FF"
@@ -241,12 +242,15 @@
         "keyword.control",
         "keyword.operator.expression",
         "keyword.operator.new",
+        "keyword.operator.logical",
+        "keyword.operator.ternary",
         "keyword.map.go",
         "constant.language",
         "storage.type",
         "storage.modifier",
         "meta.class storage.type.class",
         "meta.use",
+        "meta.using-namespace.cpp keyword.other.using.directive",
         "variable.other.readwrite.String",
         "support.type",
         "support.class",
@@ -273,13 +277,12 @@
         "meta.class meta.definition.method",
         "meta.class storage.type",
         "variable.function",
-        "support.function",
         "constant.numeric",
         "constant.character",
         "constant.escape",
         "keyword.other",
-        "new.expr meta.function-call entity.name.function",
-        "constant.other.rgb-value"
+        "constant.other.rgb-value",
+        "entity.name.type.cpp"
       ],
       "settings": {
         "foreground": "#EBC88D"
@@ -326,11 +329,15 @@
       }
     },
     {
-      "name": "!import",
+      "name": "!import, c++ #include #define",
       "scope": [
         "source.css meta.property-value keyword.other.important",
         "keyword.extend.css",
-        "keyword.global.css"
+        "keyword.global.css",
+        "keyword.control.directive.include.cpp",
+        "keyword.control.directive.include.cpp punctuation.definition.directive.cpp",
+        "keyword.control.directive.define.cpp punctuation.definition.directive.cpp",
+        "keyword.control.directive.define.cpp"
       ],
       "settings": {
         "foreground": "#A8CC7C",
@@ -371,6 +378,85 @@
       ],
       "settings": {
         "foreground": "#d1d1d1"
+      }
+    },
+    {
+      "name": "CSS property value",
+      "scope": [
+        "source.css meta.property-value entity.name.tag.custom",
+        "source.css meta.property-value"
+
+      ],
+      "settings": {
+        "foreground": "#E394DC"
+      }
+    },
+    {
+      "name": "CSS Function",
+      "scope": [
+        "source.css meta.property-value meta.function",
+        "source.css meta.property-value support.function"
+      ],
+      "settings": {
+        "foreground": "#AF9CFF"
+      }
+    },
+    {
+      "name": "CSS Color",
+      "scope": [
+        "punctuation.definition.constant.css",
+        "constant.other.color.rgb-value.hex"
+      ],
+      "settings": {
+        "foreground": "#EBC88D",
+      }
+    },
+    {
+      "name": "Ini Keyword",
+      "scope": [
+        "source.ini keyword.other.definition.ini"
+      ],
+      "settings": {
+        "foreground": "#AF9CFF",
+      }
+    },
+    {
+      "name": "Ini Title",
+      "scope": [
+        "source.ini entity.name.section.group-title.ini"
+      ],
+      "settings": {
+        "foreground": "#87C3FF",
+      }
+    },
+    {
+      "name": "Ini entity",
+      "scope": [
+        "source.ini punctuation.definition.entity.ini"
+      ],
+      "settings": {
+        "foreground": "#82D2CE",
+      }
+    },
+    {
+      "name": "C++ Function",
+      "scope": [
+        "entity.name.function.definition.cpp",
+        "entity.name.function.call.cpp",
+        "meta.function.definition.cpp entity.name.function.member.cpp",
+        "source.cpp support.function"
+      ],
+      "settings": {
+        "foreground": "#87C3FF"
+      }
+    },
+    {
+      "name": "C++ Variable",
+      "scope": [
+        "variable.other.property.cpp"
+      ],
+      "settings": {
+        "foreground": "#AF9CFF"
       }
     },
     {
