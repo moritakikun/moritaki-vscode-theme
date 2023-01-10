@@ -333,7 +333,7 @@
       }
     },
     {
-      "name": "!import, c++ #include #define",
+      "name": "!import, c++ #include #define, doctype",
       "scope": [
         "source.css meta.property-value keyword.other.important",
         "keyword.extend.css",
@@ -341,7 +341,8 @@
         "keyword.control.directive.include.cpp",
         "keyword.control.directive.include.cpp punctuation.definition.directive.cpp",
         "keyword.control.directive.define.cpp punctuation.definition.directive.cpp",
-        "keyword.control.directive.define.cpp"
+        "keyword.control.directive.define.cpp",
+        "meta.tag.metadata.doctype.html entity.name.tag.html"
       ],
       "settings": {
         "foreground": "#A8CC7C",
@@ -389,7 +390,6 @@
       "scope": [
         "source.css meta.property-value entity.name.tag.custom",
         "source.css meta.property-value"
-
       ],
       "settings": {
         "foreground": "#E394DC"
