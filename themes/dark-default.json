@@ -4,25 +4,25 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "enumMember": {
-      "foreground": "#56b6c2"
+      "foreground": "#AF9CFF"
     },
     "variable.constant": {
-      "foreground": "#6daaf7"
-    },
-    "variable.defaultLibrary": {
       "foreground": "#E0957B"
     },
+    "variable.defaultLibrary": {
+      "foreground": "#EBC88D"
+    },
     "variable:dart": {
-      "foreground": "#6daaf7"
+      "foreground": "#87C3FF"
     },
     "property:dart": {
-      "foreground": "#6daaf7"
+      "foreground": "#87C3FF"
     },
     "annotation:dart": {
-      "foreground": "#6daaf7"
+      "foreground": "#87C3FF"
     },
     "parameter.label:dart": {
-      "foreground": "#abb2bf"
+      "foreground": "#d1d1d1"
     }
   },
   "colors": {
@@ -141,14 +141,14 @@
     "titleBar.inactiveBackground": "#292929",
     "titleBar.inactiveForeground": "#777777",
     "editor.findMatchBackground": "#D49550",
-    "editor.findMatchHighlightBackground": "#5a3a14"
+    "editor.findMatchHighlightBackground": "#163764"
   },
   "tokenColors": [
     {
       "name": "Tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#87C3FF"
+        "foreground": "#AF9CFF"
       }
     },
     {
@@ -180,15 +180,12 @@
       "name": "Component",
       "scope": "support.class.component",
       "settings": {
-        "foreground": "#AF9CFF"
+        "foreground": "#82D2CE"
       }
     },
     {
       "name": "Attributes",
-      "scope": [
-        "entity.other.attribute-name",
-        "punctuation.definition.entity"
-      ],
+      "scope": ["entity.other.attribute-name", "punctuation.definition.entity"],
       "settings": {
         "foreground": "#AF9CFF",
         "fontStyle": "italic"
@@ -216,7 +213,7 @@
       "name": "Variable Language",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#CC7C8A",
+        "foreground": "#EBC88D",
         "fontStyle": "italic"
       }
     },
@@ -231,7 +228,7 @@
       "name": "Variable Other Object",
       "scope": "variable.other.object",
       "settings": {
-        "foreground": "#d1d1d1"
+        "foreground": "#EBC88D"
       }
     },
     {
@@ -243,16 +240,16 @@
     },
     {
       "name": "Variable Other Property",
-      "scope": "variable.other.property, variable.other.constant.property",
+      "scope": "variable.other.property, variable.other.constant.property, variable.other.object.property, support.variable.property",
       "settings": {
         "foreground": "#AF9CFF"
       }
     },
     {
-      "name": "Variable Other Constant Oobject",
-      "scope": "variable.other.constant.object",
+      "name": "Variable Other Constant",
+      "scope": "variable.other.constant",
       "settings": {
-        "foreground": "#E0957B"
+        "foreground": "#EBC88D"
       }
     },
     {
@@ -274,7 +271,7 @@
       "name": "Integers",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#EBC88D"
+        "foreground": "#E0957B"
       }
     },
     {
@@ -286,7 +283,7 @@
         "variable.function"
       ],
       "settings": {
-        "foreground": "#EBC88D"
+        "foreground": "#87C3FF"
       }
     },
     {
@@ -312,9 +309,26 @@
     },
     {
       "name": "Regexp Operator, String Template",
-      "scope": ["string.regexp punctuation.definition.string", "punctuation.definition.template-expression"],
+      "scope": [
+        "string.regexp punctuation.definition.string",
+        "punctuation.definition.template-expression"
+      ],
       "settings": {
         "foreground": "#82D2CE"
+      }
+    },
+    {
+      "name": "regexp operator.quantifier",
+      "scope": "keyword.operator.quantifier.regexp",
+      "settings": {
+        "foreground": "#E0957B"
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": "string.regexp",
+      "settings": {
+        "foreground": "#87C3FF"
       }
     },
     {
@@ -328,40 +342,71 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#E0957B"
+        "foreground": "#EBC88D"
       }
     },
     {
       "name": "Keyword, Class, Type, Interface, Namespace Constant",
-      "scope": "keyword, storage.type, storage.modifier, meta.class storage.type.class, meta.use, variable.other.readwrite.String, support.type, support.interface, support.other.namespace, constant.language",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier",
+        "meta.class storage.type.class",
+        "meta.use",
+        "variable.other.readwrite.String",
+        "support.type",
+        "support.interface",
+        "support.other.namespace",
+        "constant.language",
+        "constant.character.escape"
+      ],
       "settings": {
         "foreground": "#82D2CE"
       }
     },
     {
-      "name": "Function, Special Method, Number, Keyword Other, Color",
-      "scope": "meta.definition.function, meta.var.expr meta.var-single-variable.expr meta.definition.variable entity.name.function, meta.function.expression, meta.function-call, meta.class meta.definition.method, meta.class storage.type, variable.function, constant.character, constant.escape, keyword.other, constant.other.rgb-value",
+      "name": "Color",
+      "scope": "constant.other.rgb-value",
       "settings": {
-        "foreground": "#EBC88D"
+        "foreground": "#E0957B"
       }
     },
     {
       "name": "Keyword Other, Keyword Operator",
-      "scope": "keyword.operator.comparison, keyword.operator.relational, keyword.operator.increment, keyword.operator.decrement, keyword.operator.arithmetic, keyword.operator.assignment, keyword.operator.type, keyword.operator.optional, keyword.other.template, keyword.other.substitution",
+      "scope": [
+        "keyword.operator.assignment",
+        "keyword.operator.type",
+        "keyword.operator.optional",
+        "keyword.other.template",
+        "keyword.other.substitution"
+      ],
       "settings": {
         "foreground": "#d1d1d1"
       }
     },
     {
       "name": "keyword.operator",
-      "scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
+      "scope": [
+        "keyword.operator.arithmetic",
+        "keyword.operator.comparison",
+        "keyword.operator.decrement",
+        "keyword.operator.increment",
+        "keyword.operator.relational"
+      ],
       "settings": {
-        "foreground": "#56b6c2"
+        "foreground": "#d1d1d1"
       }
     },
     {
-      "name": "Object, Object Member, Variable Other, Brace, Arrow, Parameters",
-      "scope": "meta.object.member, meta.block, meta.brace.square, meta.brace.round, meta.parameters, meta.objectliteral, variable.other, storage.type.function.arrow",
+      "name": "Brace, Arrow, Parameters",
+      "scope": [
+        "meta.object.member",
+        "meta.block",
+        "meta.brace.square",
+        "meta.brace.round",
+        "meta.parameters",
+        "storage.type.function.arrow"
+      ],
       "settings": {
         "foreground": "#d1d1d1"
       }
@@ -384,13 +429,6 @@
       "scope": "meta.tag.metadata.doctype.html entity.name.tag.html",
       "settings": {
         "foreground": "#A8CC7C"
-      }
-    },
-    {
-      "name": "JS Variable Other Property",
-      "scope": "source.js variable.other.property, source.js variable.other.object.property, source.js support.variable.property, source.js variable.other.constant.property",
-      "settings": {
-        "foreground": "#AF9CFF"
       }
     },
     {
@@ -428,15 +466,43 @@
       }
     },
     {
+      "name": "CSS Tag",
+      "scope": "source.css meta.property-list entity.name.tag",
+      "settings": {
+        "foreground": "#AF9CFF"
+      }
+    },
+    {
       "name": "CSS Property-name",
-      "scope": "source.css meta.property-list entity.name.tag, source.css meta.property-value support.constant.mathematical-symbols",
+      "scope": "source.css meta.property-value support.constant.mathematical-symbols",
       "settings": {
         "foreground": "#d1d1d1"
       }
     },
     {
+      "name": "CSS KeyWord Operator",
+      "scope": "source.css keyword.operator",
+      "settings": {
+        "foreground": "#d1d1d1"
+      }
+    },
+    {
+      "name": "CSS Keyword Other Unit",
+      "scope": "source.css keyword.other.unit",
+      "settings": {
+        "foreground": "#E0957B"
+      }
+    },
+    {
       "name": "CSS KeyWord",
-      "scope": "source.css meta.property-value keyword.other.important, keyword.extend.css, keyword.global.css, meta.tag.metadata.doctype.html entity.name.tag.html, source.css keyword.control.at-rule punctuation.definition.keyword, source.css keyword.control.at-rule",
+      "scope": [
+        "source.css meta.property-value keyword.other.important",
+        "source.css keyword.control.at-rule punctuation.definition.keyword",
+        "source.css keyword.control.at-rule",
+        "meta.tag.metadata.doctype.html entity.name.tag.html",
+        "keyword.extend.css",
+        "keyword.global.css"
+      ],
       "settings": {
         "foreground": "#A8CC7C"
       }
@@ -481,13 +547,6 @@
       }
     },
     {
-      "name": "Vue Other Constant Property",
-      "scope": "source.vue variable.other.constant.object.property, source.vue variable.other.constant.property, source.vue meta.object.member variable.other.constant",
-      "settings": {
-        "foreground": "#CC7C8A",
-      }
-    },
-    {
       "name": "TSX Interface Property",
       "scope": "source.tsx meta.interface meta.definition.property",
       "settings": {
@@ -495,43 +554,106 @@
       }
     },
     {
-      "name": "C++ Using",
-      "scope": "meta.using-namespace.cpp keyword.other.using.directive",
+      "name": "C/C++ Using",
+      "scope": [
+        "meta.using-namespace.cpp keyword.other.using.directive",
+        "meta.using-namespace.c keyword.other.using.directive"
+      ],
       "settings": {
         "foreground": "#6daaf7"
       }
     },
     {
-      "name": "C++ Class",
-      "scope": "entity.name.type.cpp",
+      "name": "C/C++ Class",
+      "scope": "entity.name.type.c, entity.name.type.cpp",
       "settings": {
         "foreground": "#EBC88D"
       }
     },
     {
-      "name": "C++ Package",
-      "scope": "keyword.control.directive.include.cpp, keyword.control.directive.include.cpp punctuation.definition.directive.cpp, keyword.control.directive.define.cpp punctuation.definition.directive.cpp, keyword.control.directive.define.cpp",
+      "name": "C/C++ (Keyword, Class, Type, Interface, Namespace Constant)",
+      "scope": [
+        "source.c keyword",
+        "source.c storage.type",
+        "source.c storage.modifier",
+        "source.c meta.class storage.type.class",
+        "source.c meta.use",
+        "source.c variable.other.readwrite.String",
+        "source.c support.type",
+        "source.c support.interface",
+        "source.c support.other.namespace",
+        "source.c constant.language",
+        "source.c constant.character.escape",
+        "source.cpp keyword",
+        "source.cpp storage.type",
+        "source.cpp storage.modifier",
+        "source.cpp meta.class storage.type.class",
+        "source.cpp meta.use",
+        "source.cpp variable.other.readwrite.String",
+        "source.cpp support.type",
+        "source.cpp support.interface",
+        "source.cpp support.other.namespace",
+        "source.cpp constant.language",
+        "source.cpp constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#E394DC"
+      }
+    },
+    {
+      "name": "C/C++ punctuation.definition",
+      "scope": [
+        "punctuation.definition.directive.c",
+        "punctuation.definition.directive.cpp"
+      ],
+      "settings": {
+        "foreground": "#E394DC"
+      }
+    },
+    {
+      "name": "C/C++ Variable",
+      "scope": ["variable.other.property.cpp", "variable.other.property.c"],
+      "settings": {
+        "foreground": "#AF9CFF"
+      }
+    },
+    {
+      "name": "C/C++ (String, Punctuation.definition.string)",
+      "scope": [
+        "source.c string",
+        "source.c punctuation.definition.string.begin",
+        "source.c punctuation.definition.string.end",
+        "source.c punctuation.definition.string.template.begin",
+        "source.c punctuation.definition.string.template.end",
+        "source.cpp string",
+        "source.cpp punctuation.definition.string.begin",
+        "source.cpp punctuation.definition.string.end",
+        "source.cpp punctuation.definition.string.template.begin",
+        "source.cpp punctuation.definition.string.template.end"
+      ],
       "settings": {
         "foreground": "#A8CC7C"
       }
     },
     {
-      "name": "C++ Function",
-      "scope": [
-        "entity.name.function.definition.cpp",
-        "entity.name.function.call.cpp",
-        "meta.function.definition.cpp entity.name.function.member.cpp",
-        "source.cpp support.function"
-      ],
+      "name": "C/C++ Meta Function",
+      "scope": "meta.function.c,meta.function.cpp",
       "settings": {
-        "foreground": "#87C3FF"
+        "foreground": "#AF9CFF"
       }
     },
     {
-      "name": "C++ Variable",
-      "scope": ["variable.other.property.cpp"],
+      "name": "C/C++ Support Type Posix-reserved",
+      "scope": "support.type.posix-reserved.c, support.type.posix-reserved.cpp",
       "settings": {
-        "foreground": "#AF9CFF"
+        "foreground": "#EBC88D"
+      }
+    },
+    {
+      "name": "C/C++ constant",
+      "scope": "source.c constant, source.cpp constant",
+      "settings": {
+        "foreground": "#E0957B"
       }
     },
     {
