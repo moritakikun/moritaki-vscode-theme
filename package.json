@@ -1,9 +1,9 @@
 {
   "name": "moritaki-vscode-theme",
   "displayName": "MT Theme",
-  "description": "A theme extending Fleet Dark and other themes",
+  "description": "One dark theme, which is based on Fleet Dark theme and One Dark Pro theme",
   "publisher": "moritaki",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -17,7 +17,8 @@
     "vscode",
     "dark",
     "moritaki",
-    "fleet"
+    "fleet",
+    "one dark"
   ],
   "categories": [
     "Themes"
@@ -25,7 +26,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "MT Fleet Dark",
+        "label": "MT Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
       }
