@@ -140,7 +140,8 @@
     "titleBar.activeForeground": "#d1d1d1",
     "titleBar.inactiveBackground": "#292929",
     "titleBar.inactiveForeground": "#777777",
-    "editor.findMatchBackground": "#D49550",
+    "editor.findMatchBackground": "#163764",
+    "editor.findMatchBorder": "#D49550",
     "editor.findMatchHighlightBackground": "#163764"
   },
   "tokenColors": [
