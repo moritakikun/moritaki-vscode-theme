@@ -621,7 +621,13 @@
     },
     {
       "name": "CSS Function",
-      "scope": "meta.at-rule.mixin, meta.at-rule.extend, source.css meta.property-value meta.function, source.css meta.property-value support.function",
+      "scope": [
+        "meta.at-rule.mixin",
+        "meta.at-rule.extend",
+        "source.css meta.property-value meta.function",
+        "source.css meta.property-value support.function",
+        "source.css meta.property-value support.function.any-method"
+      ],
       "settings": {
         "foreground": "#AF9CFF",
         "fontStyle": ""
@@ -679,7 +685,10 @@
     },
     {
       "name": "CSS Property-Value",
-      "scope": "source.css meta.property-value",
+      "scope": [
+        "source.css meta.property-value",
+        "source.css support.constant.property-value"
+      ],
       "settings": {
         "foreground": "#E394DC"
       }
