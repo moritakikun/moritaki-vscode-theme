@@ -468,6 +468,7 @@
         "keyword.operator.arithmetic",
         "keyword.operator.comparison",
         "keyword.operator.cast.static_cast",
+        "keyword.operator.expression",
         "punctuation.definition.keyword",
         "storage.type.class"
       ],
