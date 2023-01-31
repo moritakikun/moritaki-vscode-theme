@@ -687,7 +687,6 @@
     {
       "name": "CSS Property-Value",
       "scope": [
-        "source.css meta.property-value",
         "source.css support.constant.property-value"
       ],
       "settings": {
