@@ -465,12 +465,13 @@
         "keyword.operator.ternary",
         "keyword.operator.decrement",
         "keyword.operator.increment",
-        "keyword.operator.arithmetic",
         "keyword.operator.comparison",
         "keyword.operator.cast.static_cast",
         "keyword.operator.expression",
+        "keyword.operator.logical",
         "punctuation.definition.keyword",
-        "storage.type.class"
+        "storage.type.class",
+        "storage.type.function.arrow"
       ],
       "settings": {
         "foreground": "#82D2CE"
