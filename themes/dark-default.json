@@ -10,13 +10,16 @@
       "foreground": "#AF9CFF"
     },
     "variable.defaultLibrary": {
-      "foreground": "#EBC88D"
+      "foreground": "#A8CC7C"
+    },
+    "property.declaration": {
+      "foreground": "#E394DC"
     },
     "variable:dart": {
-      "foreground": "#87C3FF"
+      "foreground": "#AF9CFF"
     },
     "property:dart": {
-      "foreground": "#87C3FF"
+      "foreground": "#E394DC"
     },
     "annotation:dart": {
       "foreground": "#87C3FF"
@@ -219,16 +222,26 @@
       }
     },
     {
-      "name": "Variable Other Property",
+      "name": "Variable Other Object Property",
       "scope": [
-        "variable.other.property",
         "variable.other.constant.property",
         "variable.other.object.property",
         "variable.other.constant.object.property",
-        "support.variable.property"
+        "support.variable.property",
+        "meta.block variable.other.property"
       ],
       "settings": {
         "foreground": "#AF9CFF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Variable Other Property",
+      "scope": [
+        "meta.object-literal.key variable.other.property"
+      ],
+      "settings": {
+        "foreground": "#E394DC",
         "fontStyle": ""
       }
     },
@@ -287,16 +300,6 @@
       ],
       "settings": {
         "foreground": "#87C3FF"
-      }
-    },
-    {
-      "name": "Support Functions",
-      "scope": [
-        "support.function",
-      ],
-      "settings": {
-        "foreground": "#e06c75",
-        "fontStyle": ""
       }
     },
     {
@@ -556,14 +559,13 @@
       }
     },
     {
-      "name": "Brace, Arrow, Parameters",
+      "name": "Brace, Parameters",
       "scope": [
         "meta.object.member",
         "meta.block",
         "meta.brace.square",
         "meta.brace.round",
         "meta.parameters",
-        "storage.type.function.arrow"
       ],
       "settings": {
         "foreground": "#d1d1d1"
