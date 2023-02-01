@@ -12,9 +12,6 @@
     "variable.defaultLibrary": {
       "foreground": "#A8CC7C"
     },
-    "property.declaration": {
-      "foreground": "#E394DC"
-    },
     "variable:dart": {
       "foreground": "#AF9CFF"
     },
@@ -433,7 +430,10 @@
     },
     {
       "name": "Support Component",
-      "scope": "support.class.component",
+      "scope": [
+        "support.class.component",
+        "meta.tag.custom entity.name.tag"
+    ],
       "settings": {
         "foreground": "#A8CC7C"
       }
@@ -720,7 +720,14 @@
     },
     {
       "name": "Vue Template-Script-Style",
-      "scope": "entity.name.tag.template, entity.name.tag.script, entity.name.tag.style",
+      "scope": [
+        "entity.name.tag.template",
+        "entity.name.tag.script",
+        "entity.name.tag.style",
+        "source.vue meta.block.template",
+        "source.vue meta.block.script",
+        "source.vue meta.block.style",
+      ],
       "settings": {
         "foreground": "#AF9CFF",
         "fontStyle": "italic"

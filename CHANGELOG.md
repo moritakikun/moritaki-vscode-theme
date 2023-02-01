@@ -1,9 +1,23 @@
 # Change Log
 
-All notable changes to the "moritaki-theme" extension will be documented in this file.
+## [1.1.4]
+`2023-02-01`
+- feat: support for highlighting vue components
+- fix:  the highlighting of object property
+- docs: update package.json and CHANGELOG.md
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.1.3]
+`2023-01-31`
+- fix: the highlighting of some keywords
+- fix: the highlighting of value in css
 
-## [Unreleased]
+## [1.1.2]
+`2023-01-30`
+- feat: the highlighting of function and property in css
+- fix: the highlighting of the search results
 
-- Initial release
+## [1.1.1]
+- docs: update READNE.md
+
+## [1.1.0]
+- feat: the highlighting of the common files
