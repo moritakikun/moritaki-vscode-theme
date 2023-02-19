@@ -294,10 +294,10 @@
       "name": "Functions",
       "scope": [
         "entity.name.function",
-        "meta.function-call",
         "meta.require",
         "support.function.any-method",
-        "variable.function"
+        "variable.function",
+        "keyword.operator.expression.import"
       ],
       "settings": {
         "foreground": "#87C3FF"
@@ -469,7 +469,7 @@
       "scope": ["entity.name.type.interface"],
       "settings": {
         "foreground": "#A8CC7C",
-        "fontStyle": "italic bold"
+        "fontStyle": "italic"
       }
     },
     {
@@ -738,8 +738,26 @@
         "source.vue meta.block.style",
       ],
       "settings": {
-        "foreground": "#AF9CFF",
+        "foreground": "#A8CC7C",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Vue Component Invalid",
+      "scope": [
+        "meta.tag.structure invalid.illegal.character-not-allowed-here.html",
+      ],
+      "settings": {
+        "foreground": "#777777",
+      }
+    },
+    {
+      "name": "Vue Component",
+      "scope": [
+        "meta.tag.other.unrecognized.html.derivative entity.name.tag.html",
+      ],
+      "settings": {
+        "foreground": "#A8CC7C",
       }
     },
     {
@@ -764,6 +782,16 @@
       "scope": ["variable.other.property.cpp", "variable.other.property.c"],
       "settings": {
         "foreground": "#AF9CFF"
+      }
+    },
+    {
+      "name": "C/C++ KeyWord.operator",
+      "scope":[
+        "source.c keyword.operator",
+        "source.cpp keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#82D2CE"
       }
     },
     {
