@@ -1,5 +1,9 @@
 # Change Log
-
+## [1.1.5]
+`2023-02-018`
+- feat: adjust the workspace colors
+- fix:  the highlighting of vue;
+- docs: update package.json and CHANGELOG.md
 ## [1.1.4]
 `2023-02-01`
 - feat: support for highlighting vue components
