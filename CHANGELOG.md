@@ -1,6 +1,10 @@
 # Change Log
+## [1.1.6]
+`2023-02-20`
+- fix:  the highlighting of vue(template, script, style);
+- docs: update package.json and CHANGELOG.md
 ## [1.1.5]
-`2023-02-018`
+`2023-02-18`
 - feat: adjust the workspace colors
 - fix:  the highlighting of vue;
 - docs: update package.json and CHANGELOG.md
