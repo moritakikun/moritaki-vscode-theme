@@ -738,7 +738,7 @@
         "source.vue meta.block.style",
       ],
       "settings": {
-        "foreground": "#A8CC7C",
+        "foreground": "#AF9CFF",
         "fontStyle": "italic"
       }
     },
